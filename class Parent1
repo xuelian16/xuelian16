@@ -1,0 +1,25 @@
+class Parent{
+
+    private String name;
+    private int age;
+
+   public Parent(){
+        System.out.println("Parent constructor method");
+        {
+            System.out.println("Parent constructor method--> not static block");
+        }
+    }
+    {
+        System.out.println("Parent not static block");
+        name = "zhangsan";
+        age = 50;
+    }
+    static {
+        System.out.println("Parent static block");
+    }
+
+    public Parent(String name, int age) {
+        System.out.println("Parent constructor method");
+        this.name = "lishi";
+        this.age = 51;
+    }
